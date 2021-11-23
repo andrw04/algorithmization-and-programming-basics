@@ -1,0 +1,3 @@
+﻿  task3.2.cpp
+C:\Projects\Лабораторные рааботы 1 семестр\laba5\task3.2\task3.2.cpp(24,19): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+  task3.2.vcxproj -> C:\Projects\Лабораторные рааботы 1 семестр\laba5\Debug\task3.2.exe

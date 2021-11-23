@@ -1,0 +1,4 @@
+﻿  task2.cpp
+C:\Projects\Лабораторные рааботы 1 семестр\laba5\task2\task2.cpp(27,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+C:\Projects\Лабораторные рааботы 1 семестр\laba5\task2\task2.cpp(20): warning C4715: rekurs: значение возвращается не при всех путях выполнения
+  task2.vcxproj -> C:\Projects\Лабораторные рааботы 1 семестр\laba5\Debug\task2.exe
