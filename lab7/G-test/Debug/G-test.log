@@ -1,0 +1,3 @@
+﻿  test.cpp
+C:\Projects\Лабораторные работы 1 семестр\lab7\G-test\test.cpp(53): warning C4715: S: значение возвращается не при всех путях выполнения
+  G-test.vcxproj -> C:\Projects\Лабораторные работы 1 семестр\lab7\Debug\G-test.exe
