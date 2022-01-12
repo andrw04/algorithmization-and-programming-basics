@@ -74,3 +74,25 @@ string convert_new3(string digit3, string& Digit, int size) {
     }
     return convert_new3(digit3, Digit, size - 1);
 }
+int main() {
+    setlocale(LC_ALL, "ru");
+    int digit;
+    string Digit;
+    cout << "Введите число:\n";
+    cin >> digit;
+    if (digit < 0) {
+        digit *= -1;
+        negative = false;
+    }
+    if (digit == 0) {
+        cout << 0;
+        return 0;
+    }
+    notation3(digit, Digit);
+    string digit3 = Digit;
+    int size = 0;
+    for (int i = 0; Digit[i] != '\0'; i++)
+        size++;
+    cout << convert_new3(digit3, Digit, size - 1);
+    return 0;
+}
