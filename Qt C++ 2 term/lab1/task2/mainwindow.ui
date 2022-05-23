@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>1000</width>
+      <height>600</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>20</y>
+      <width>210</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Выберите фигуру</string>
+    </property>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Круг</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Шестиугольник</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Звезда</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Квадрат</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Прямоугольник</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Эллипс</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Треугольник</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="FigureParametrs">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Параметры фигуры</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="addFigure">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>190</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить фигуру</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>180</y>
+      <width>217</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Управление</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="1">
+      <widget class="QPushButton" name="moveRight">
+       <property name="text">
+        <string>RIGHT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="moveLeft">
+       <property name="text">
+        <string>LEFT</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="2">
+      <widget class="QPushButton" name="DxDy">
+       <property name="text">
+        <string>Выбрать ось вращения</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="2">
+      <widget class="QPushButton" name="moveDown">
+       <property name="text">
+        <string>DOWN</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="rotL">
+       <property name="text">
+        <string>rotateL</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="rotR">
+       <property name="text">
+        <string>rotateR</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="2">
+      <widget class="QPushButton" name="moveUp">
+       <property name="text">
+        <string>UP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QPushButton" name="Scale">
+       <property name="text">
+        <string>Изменить размер</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="SquareSelected">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>590</y>
+      <width>221</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Площадь выбранной фигуры</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PerimetrSelected">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>630</y>
+      <width>221</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Периметр выбранной фигуры</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="myFigure">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>630</y>
+      <width>1001</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Рисовать свою фигуру</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
