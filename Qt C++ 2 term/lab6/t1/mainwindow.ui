@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>task1</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>391</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Добавление вершин</string>
+    </property>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>301</width>
+       <height>28</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox">
+     <property name="geometry">
+      <rect>
+       <x>67</x>
+       <y>40</y>
+       <width>191</width>
+       <height>29</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>40</y>
+       <width>101</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Добавить</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ключ</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Текст</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>120</y>
+      <width>391</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Действие с деревом</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="spinBox_2">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0" colspan="4">
+      <widget class="QPushButton" name="show">
+       <property name="text">
+        <string>Показать дерево</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="find">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="4">
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>Tree:</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="reset">
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QSpinBox" name="spinBox_3">
+       <property name="maximum">
+        <number>100</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="4">
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="text">
+        <string>Обратный обход</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="4">
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="text">
+        <string>Прямой обход</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="4">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="text">
+        <string>В порядке возрастания ключей</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0" colspan="4">
+      <widget class="QPushButton" name="individual_task">
+       <property name="text">
+        <string>Ср. ключ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>380</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>26</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>0</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>189</number>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>Ключ</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Текст</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>13</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>A</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>10</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>B</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>15</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>C</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>D</string>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>E</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>4</string>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>F</string>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string>21</string>
+     </property>
+    </item>
+    <item row="6" column="1">
+     <property name="text">
+      <string>G</string>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>22</string>
+     </property>
+    </item>
+    <item row="7" column="1">
+     <property name="text">
+      <string>H</string>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="text">
+      <string>8</string>
+     </property>
+    </item>
+    <item row="8" column="1">
+     <property name="text">
+      <string>I</string>
+     </property>
+    </item>
+    <item row="9" column="0">
+     <property name="text">
+      <string>6</string>
+     </property>
+    </item>
+    <item row="9" column="1">
+     <property name="text">
+      <string>J</string>
+     </property>
+    </item>
+    <item row="10" column="0">
+     <property name="text">
+      <string>24</string>
+     </property>
+    </item>
+    <item row="10" column="1">
+     <property name="text">
+      <string>K</string>
+     </property>
+    </item>
+    <item row="11" column="0">
+     <property name="text">
+      <string>20</string>
+     </property>
+    </item>
+    <item row="11" column="1">
+     <property name="text">
+      <string>L</string>
+     </property>
+    </item>
+    <item row="12" column="0">
+     <property name="text">
+      <string>9</string>
+     </property>
+    </item>
+    <item row="12" column="1">
+     <property name="text">
+      <string>M</string>
+     </property>
+    </item>
+    <item row="13" column="0">
+     <property name="text">
+      <string>23</string>
+     </property>
+    </item>
+    <item row="13" column="1">
+     <property name="text">
+      <string>N</string>
+     </property>
+    </item>
+    <item row="14" column="0">
+     <property name="text">
+      <string>8</string>
+     </property>
+    </item>
+    <item row="14" column="1">
+     <property name="text">
+      <string>O</string>
+     </property>
+    </item>
+    <item row="15" column="0">
+     <property name="text">
+      <string>12</string>
+     </property>
+    </item>
+    <item row="15" column="1">
+     <property name="text">
+      <string>P</string>
+     </property>
+    </item>
+    <item row="16" column="0">
+     <property name="text">
+      <string>21</string>
+     </property>
+    </item>
+    <item row="16" column="1">
+     <property name="text">
+      <string>Q</string>
+     </property>
+    </item>
+    <item row="17" column="0">
+     <property name="text">
+      <string>16</string>
+     </property>
+    </item>
+    <item row="17" column="1">
+     <property name="text">
+      <string>R</string>
+     </property>
+    </item>
+    <item row="18" column="0">
+     <property name="text">
+      <string>1</string>
+     </property>
+    </item>
+    <item row="18" column="1">
+     <property name="text">
+      <string>S</string>
+     </property>
+    </item>
+    <item row="19" column="0">
+     <property name="text">
+      <string>6</string>
+     </property>
+    </item>
+    <item row="19" column="1">
+     <property name="text">
+      <string>T</string>
+     </property>
+    </item>
+    <item row="20" column="0">
+     <property name="text">
+      <string>12</string>
+     </property>
+    </item>
+    <item row="20" column="1">
+     <property name="text">
+      <string>U</string>
+     </property>
+    </item>
+    <item row="21" column="0">
+     <property name="text">
+      <string>18</string>
+     </property>
+    </item>
+    <item row="21" column="1">
+     <property name="text">
+      <string>V</string>
+     </property>
+    </item>
+    <item row="22" column="0">
+     <property name="text">
+      <string>24</string>
+     </property>
+    </item>
+    <item row="22" column="1">
+     <property name="text">
+      <string>W</string>
+     </property>
+    </item>
+    <item row="23" column="0">
+     <property name="text">
+      <string>2</string>
+     </property>
+    </item>
+    <item row="23" column="1">
+     <property name="text">
+      <string>X</string>
+     </property>
+    </item>
+    <item row="24" column="0">
+     <property name="text">
+      <string>3</string>
+     </property>
+    </item>
+    <item row="24" column="1">
+     <property name="text">
+      <string>Y</string>
+     </property>
+    </item>
+    <item row="25" column="0">
+     <property name="text">
+      <string>22</string>
+     </property>
+    </item>
+    <item row="25" column="1">
+     <property name="text">
+      <string>Z</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="from_array">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>550</y>
+      <width>363</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить из массива</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
